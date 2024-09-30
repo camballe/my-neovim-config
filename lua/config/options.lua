@@ -55,3 +55,11 @@ vim.cmd([[
   autocmd TextYankPost * if v:event.operator ==# 'y' | set ff=unix | endif
   autocmd BufReadPost,BufWritePre * setlocal ff=unix
 ]])
+
+-- .config/nvim/lua/config/options.lua (or a new file like filetypes.lua)
+
+vim.filetype.add({
+  extension = {
+    prisma = "prisma",
+  },
+})
